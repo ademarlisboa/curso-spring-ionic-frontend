@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  
+  <ion-list>
+    <ion-list-header>
+      Categorias
+    </ion-list-header>
+    <ion-item   *ngFor=" let item of itens">
+      <ion-button shape="round">{{ item.nome }} </ion-button>
+    </ion-item >
+
+    <ion-item   >
+      <ion-button shape="round" routerLink="/login">voltar </ion-button>
+    </ion-item >
+
+    
+  </ion-list>
+
+</ion-content>

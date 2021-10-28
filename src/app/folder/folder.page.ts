@@ -8,11 +8,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class FolderPage implements OnInit {
   public folder: string;
+  //public categoriaService  : CategoriaService;
 
   constructor(private activatedRoute: ActivatedRoute) { }
+  ionViewDidLoad(){
+   // this.categoriaService.findall().subscribe(response => {console.log(response); }, error => {console.log(error);});
+   
+  }
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+    
   }
+
+
 
 }

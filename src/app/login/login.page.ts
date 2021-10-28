@@ -1,5 +1,8 @@
 import { Component, OnInit,  } from '@angular/core';
-import {  NavController } from '@ionic/angular'
+import {  MenuController, NavController } from '@ionic/angular'
+
+//import { runInThisContext } from 'vm';
+
 
 @Component({
   selector: 'app-login',
@@ -8,13 +11,15 @@ import {  NavController } from '@ionic/angular'
 })
 export class LoginPage implements OnInit {
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public menu: MenuController) { }
 
   ngOnInit() {
+     
+
   }
 
   public login(){
-    this.navCtrl.navigateForward('folder/inbox');
+    this.navCtrl.navigateForward('/home');
   }
 
 }
